@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 func main() {
@@ -114,7 +113,6 @@ Loop:
 	// Additional--> Random number generation between 1-6 using rand
 	// 6. Random number generation between 1-6 using rand
 
-	rand.Seed(time.Now().UnixNano()) // seeding with times means it will generate random number every time
-	fmt.Println(rand.Intn(6) + 1)    // rand.Intn(6) will generate random number between 0-5, so adding 1 to make it between 1-6
+	fmt.Println(rand.Intn(6) + 1) // rand.Intn(6) will generate random number between 0-5, so adding 1 to make it between 1-6
 
 }
